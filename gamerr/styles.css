@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Sky blue */
+}
+
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-area {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: #7CFC00; /* Green grass */
+    position: relative;
+}
+
+#question {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#stickman {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+#input-area {
+    width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+#input-area input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#number-pad {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.num-button {
+    width: 30%;
+    height: 60px;
+    margin: 1%;
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#feedback, #game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#game-over {
+    font-size: 100px;
+    color: red;
+    font-family: 'Creepster', cursive; /* You might need to include this font */
+}

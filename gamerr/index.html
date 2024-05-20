@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="game-container">
+    <div id="game-area">
+        <div id="question">Question will appear here</div>
+        <div id="stickman">🙂</div>
+    </div>
+    <div id="input-area">
+        <input type="text" id="answer" placeholder="Enter your answer">
+    </div>
+    <div id="number-pad">
+        <button class="num-button">1</button>
+        <button class="num-button">2</button>
+        <button class="num-button">3</button>
+        <br>
+        <button class="num-button">4</button>
+        <button class="num-button">5</button>
+        <button class="num-button">6</button>
+        <br>
+        <button class="num-button">7</button>
+        <button class="num-button">8</button>
+        <button class="num-button">9</button>
+        <br>
+        <button class="num-button">0</button>
+    </div>
+</div>
+
+<div id="feedback"></div>
+<div id="game-over">Game Over</div>
+
+<!-- Add audio elements for sound effects -->
+<audio id="ding-sound" src="ding.mp3" preload="auto"></audio>
+<audio id="buzz-sound" src="buzz.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

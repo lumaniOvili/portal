@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Task Manager</h1>
+        </div>
+        
+        <div class="main-content">
+            <div id="subpage-content">
+                <!-- Task Form -->
+                <div class="task-form">
+                    <h2>Add New Task</h2>
+                    <div class="task-input">
+                        <input type="text" id="taskName" placeholder="Task Name">
+                        <input type="time" id="taskTime">
+                        <input type="date" id="taskDate">
+                        <input type="text" id="taskPlace" placeholder="Place">
+                    </div>
+                    <div class="task-buttons">
+                        <button id="addTaskButton">Add Task</button>
+                    </div>
+                </div>
+                
+                <!-- Task List -->
+                <div class="tasks-page">
+                    <h2 class="tasks-header">Tasks</h2>
+                    <ul id="taskList"></ul>
+                </div>
+
+                <!-- Hagman game -->
+                <div class="hangman-container">
+                    <h1>GameTime</h1>
+                    <div class="hangman-word" id="hangmanWord"></div>
+                    <div class="hangman-buttons" id="hangmanButtons"></div>
+                </div>
+
+                <!-- Sticky Wall -->
+                <div class="tasks-page">
+                    <h2 class="tasks-header">Sticky Wall</h2>
+                    <input type="text" id="noteInput" placeholder="Add a note">
+                    <button id="addNoteButton">Add Note</button>
+                    <br>
+                    <div id="stickyNotes"></div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    <script src="task.js"></script>
+    <script src="hangman.js"></script>
+    <script src="sticky-walls.js"></script>
+</body>
+</html>

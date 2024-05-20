@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4e7d3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    background-color: #d2b48c;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4d3319;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#subpage-content {
+    padding: 20px;
+    background-color: #fff;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.tasks-page {
+    background-color: #4d3319;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tasks-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #b8906f;
+    margin-bottom: 20px;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #b8906f;
+    cursor: pointer;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li.selected {
+    background-color: #8B4513;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    padding: 10px;
+    border: 1px solid #b8906f;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: #4d3319;
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-buttons button {
+    padding: 10px;
+    border: none;
+    background-color: #d2b48c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-buttons button:hover {
+    background-color: #b8906f;
+}
+
+.sidebar {
+    background-color: #f4e7d3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #4d3319; /* Dark brown */
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #d2b48c; /* Light brown */
+}
+
+/* Sticky Notes */
+.sticky-note {
+    width: 800px; /* Adjusted width */
+    max-width: 600px; /* Limit maximum width */
+    height: 50px; /* Set a fixed height */
+    margin: auto; /* Center the sticky note horizontally */
+    padding: 20px; /* Increase padding for better appearance */
+    border-radius: 6px;
+    position: relative;
+    color: #4d3319;
+    font-size: 14px;
+    background-color: #f0e5cc; /* Light Brown 1 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+}
+
+.sticky-note.burst {
+    transform: scale(1.5);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+
+.sticky-note:nth-child(odd) {
+    background-color: #f0e5cc; /* Light Brown 1 */
+}
+
+.sticky-note:nth-child(even) {
+    background-color: #e8d9b5; /* Light Brown 2 */
+}
+
+.sticky-note .timestamp {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #4d3319;
+}
+
+/* Add Note Button */
+#addNoteButton {
+    padding: 10px;
+    border: none;
+    background-color: #d2b48c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addNoteButton:hover {
+    background-color: #b8906f;
+}
+
+/*hang man please*/
+.hangman-container {
+    background-color: #4d3319; /* Dark brown */
+    color: #fff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    overflow: auto; /* Add scrolling function */
+}
+
+.hangman-word {
+    font-size: 1.5em; /* Reduce font size */
+    margin-bottom: 10px; /* Reduce margin */
+    color: #fff; /* White */
+    word-break: break-all; /* Allow word wrapping */
+    text-align: center; /* Center align the hangman word */
+}
+
+.hangman-buttons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Create 8 equal-width columns */
+    gap: 5px; /* Add gap between buttons */
+    justify-items: center; /* Center align the buttons */
+    margin-top: 20px;
+}
+
+.hangman-button {
+    padding: 10px 15px; /* Reduce button padding */
+    font-size: 1em; /* Reduce font size */
+    cursor: pointer;
+    background-color: #4d3319; /* Dark brown */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hangman-button:hover {
+    background-color: #8B4513; /* Dark brown */
+}

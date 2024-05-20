@@ -1,0 +1,25 @@
+1. **Game Interface:**
+   - Created a centralized game interface using HTML, CSS, and JavaScript.
+   - Designed the interface to include a game area where the math question and stickman character are displayed, an input area for the user's answer, and a number pad for inputting numbers.
+   - Styled the interface with a sky blue background and green grass, giving it a visually appealing look.
+
+2. **Game Logic:**
+   - Implemented the game logic using JavaScript.
+   - Generated random arithmetic questions for the user to answer.
+   - Implemented user input validation and feedback mechanisms for correct and incorrect answers.
+   - Incorporated a timer for each question and for the entire game session, adding a sense of urgency and challenge.
+
+3. **Stickman Animation:**
+   - Animated the stickman character to move randomly within the game area using JavaScript.
+   - Ensured the stickman stays within the boundaries of the game area, adding an element of unpredictability to the game.
+
+4. **Sound Effects:**
+   - Integrated sound effects (ding and buzz) using HTML `<audio>` elements and JavaScript.
+   - Played the ding sound when the user answers a question correctly, providing positive reinforcement.
+   - Played the buzz sound when the user answers a question incorrectly and when the game ends, adding interactivity and feedback to the game.
+
+5. **User Experience Enhancements:**
+   - Improved the user experience by removing the submit button and enabling the user to submit their answer by pressing the Enter key.
+   - Enhanced the appearance of the number pad to resemble a dial phone, making it intuitive and easy to use.
+
+Overall, these changes have transformed the Math Quiz Game into an engaging and interactive experience that challenges users to test their math skills while enjoying dynamic visuals and sound effects.
